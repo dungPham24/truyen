@@ -1,26 +1,35 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-
+import React, { useEffect } from "react";
+import { Routes, Route, useLocation } from "react-router-dom";
+import styled from "styled-components";
+import Home from "./component/pages/home/home";
+import Product from "./component/pages/product/Product";
+import Question from "./component/pages/question/Question";
+import Show from "./component/pages/show/Show";
+import HeaderUi from "./headerUi/HeaderUi";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Buttoncall from "buttoncall/Buttoncall";
 function App() {
+  const location = useLocation();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location]);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Apps className="App">
+      <HeaderUi />
+      <Buttoncall />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/gioithieu" element={<Product />} />
+        <Route path="/sanpham" element={<Show />} />
+        <Route path="/hoidap" element={<Question />} />
+      </Routes>
+    </Apps>
   );
 }
 
 export default App;
+
+const Apps = styled.div`
+  background-color: #ffd64f;
+`;
