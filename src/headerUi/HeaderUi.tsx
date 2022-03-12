@@ -113,7 +113,7 @@ const HeaderUi = () => {
 
 export default HeaderUi;
 const HeaderUis = styled.div`
-  position: fixed;
+  position: sticky;
   z-index: 12000000000000;
   width: 100%;
   background-color: #ed1c2a;
