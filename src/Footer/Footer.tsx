@@ -6,8 +6,8 @@ import Footer3 from "../../src/component/img/footer2.jpg";
 import Footer4 from "../../src/component/img/footer4.jpg";
 import Footer5 from "../../src/component/img/footer5.jpg";
 import Footer6 from "../../src/component/img/footer6.jpg";
-import afterFooter from "../../src/component/img/affterFooter.png";
 import { Link } from "react-router-dom";
+
 const Footer = () => {
   return (
     <Fragment>

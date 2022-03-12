@@ -39,8 +39,13 @@ const HeaderUi = () => {
 
   // create an event listener
   useEffect(() => {
+    if (window.innerWidth < 800) {
+      setClose(true);
+    } else {
+      setClose(false);
+    }
     window.addEventListener("resize", handleResize);
-  });
+  }, []);
   return (
     <>
       <HeaderUis>
@@ -109,7 +114,7 @@ const HeaderUi = () => {
 export default HeaderUi;
 const HeaderUis = styled.div`
   position: fixed;
-  z-index: 10000000000;
+  z-index: 12000000000000;
   width: 100%;
   background-color: #ed1c2a;
   ::before {
