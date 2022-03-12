@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import logoHeader from "../component/img/imgheader.jpg";
 import { Link } from "react-router-dom";
-import { FaBars, FaWindowMinimize } from "react-icons/fa";
+import { FaBars } from "react-icons/fa";
 const HeaderUi = () => {
   const [[left, width], setLine] = useState<any>([0, 0]);
   const [close, setClose] = useState<boolean>(true);
@@ -112,7 +112,6 @@ const HeaderUis = styled.div`
   z-index: 10000000000;
   width: 100%;
   background-color: #ed1c2a;
-
   ::before {
     position: absolute;
     content: "";
