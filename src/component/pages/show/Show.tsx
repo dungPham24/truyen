@@ -1,14 +1,16 @@
 import Footer from "Footer/Footer";
 import React from "react";
 import styled from "styled-components";
-import ShowCafe from "./showCafe/ShowCafe";
+import ShowCafe from "./ShowManon/ShowManon";
 import ShowNh from "./showNhahang/ShowNhahang";
+import ShowVanPhong from "./showvanphong/ShowVanPhong";
 
 const Show = () => {
   return (
     <ShowS>
       <ShowCafe />
       <ShowNh />
+      <ShowVanPhong />
       <Footer />
     </ShowS>
   );

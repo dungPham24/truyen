@@ -21,5 +21,5 @@ const Home = () => {
 export default memo(Home);
 
 const HomePages = styled.div`
-  padding-top: 5%;
+  /* padding-top: 5%; */
 `;

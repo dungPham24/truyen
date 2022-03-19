@@ -1,11 +1,11 @@
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
-import slider from "../../../img/sliderimg.jpg";
-import slider1 from "../../../img/sliderimg2.jpg";
-import slider2 from "../../../img/sliderImg3.jpg";
-import slider3 from "../../../img/sliderimg4.jpg";
-import slider4 from "../../../img/slider5.jpg";
-import slider5 from "../../../img/slider6.jpg";
+import slider from "component/img/slider1 (1).jpeg";
+import slider1 from "component/img/slider1 (1).jpg";
+import slider2 from "component/img/slider1 (2).jpeg";
+import slider3 from "component/img/slider1 (2).jpg";
+import slider4 from "component/img/slider1 (3).jpg";
+import slider5 from "component/img/slider1 (4).jpg";
 import styled from "styled-components";
 const SlierHome = () => {
   return (
@@ -76,10 +76,4 @@ const SliderHome = styled.div`
   & .carousel-status {
     display: none !important ;
   }
-  @media (max-width: 800px) {
-    padding-top: 2%;
-  }
-  /* @media (max-width: 600px) {
-    height: 50px;
-  } */
 `;

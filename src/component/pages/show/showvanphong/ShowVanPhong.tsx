@@ -1,27 +1,26 @@
-import React, { Component } from "react";
+import { Component } from "react";
 import Slider from "react-slick";
 import styled from "styled-components";
-import imgs from "component/img/show quan bia/23DF34E3-AA9B-454E-AB12-4D61E44E0684-min.jpeg";
-import imgs1 from "component/img/show quan bia/2EA3E057-E2D1-4D68-9546-443F72D677B2-min.jpeg";
-import imgs2 from "component/img/show quan bia/495409B6-45C0-47CD-9CA6-89DA15B4D457-min.jpeg";
-import imgs3 from "component/img/show quan bia/65572505-EFF3-4A40-9F53-2414D59BB396-min.jpeg";
-import imgs4 from "component/img/show quan bia/784565BA-4789-404A-AE2C-FF2485491BE5-min.jpeg";
-import imgs5 from "component/img/show quan bia/7AFEF750-5CC9-4A19-AD25-20E6178AEBE6-min.jpeg";
-import imgs6 from "component/img/show quan bia/7C55F837-B236-403F-A6AD-74F752341694-min.jpeg";
-import imgs7 from "component/img/show quan bia/A0FBF9F1-0BEB-4436-958E-B9C7ABE72EE6-min.jpeg";
-import imgs8 from "component/img/show quan bia/D16FCDB0-8B75-442E-B66D-771C108DEF04-min.jpg";
-import imgs9 from "component/img/show quan bia/D79502AF-030B-416B-B6D5-35B8558278C0-min.jpeg";
-import imgs10 from "component/img/show quan bia/DEF141A5-C8C6-493A-BE16-402336568F37-min.jpeg";
-import imgs11 from "component/img/show quan bia/E58079DB-083D-4C29-BE2A-E6B5221FF16F-min.jpeg";
-import imgs12 from "component/img/show quan bia/IMG_2156-min.jpg";
-import imgs13 from "component/img/show quan bia/IMG_2157-min.jpg";
-import imgs14 from "component/img/show quan bia/IMG_2403-min.jpg";
-import imgs15 from "component/img/show quan bia/IMG_2405-min.jpg";
-import imgs16 from "component/img/show quan bia/IMG_8605-min.jpg";
-import imgs17 from "component/img/show quan bia/IMG_9250_polarr-min.jpg";
-import imgs18 from "component/img/show quan bia/IMG_9283-min.jpg";
-import imgs19 from "component/img/show quan bia/IMG_9301-min.jpg";
-export default class ShowNh extends Component {
+import imgs from "component/img/showanh/IMG_9526-min.jpg";
+import imgs1 from "component/img/show vanphong/02B7F85A-85D5-4091-9BD3-D4566443D1DE-min.jpeg";
+import imgs2 from "component/img/show vanphong/0ACD6CD2-D1E3-45F2-B9B3-2028696902BA-min.jpeg";
+import imgs3 from "component/img/show vanphong/1755E93A-0B18-41F7-B52C-571D31C3A483-min.jpeg";
+import imgs4 from "component/img/show vanphong/23D4A739-388E-48DE-B540-08AD105B277B-min.jpg";
+import imgs5 from "component/img/show vanphong/305027AC-DA7D-4494-B586-F99F4240C177-min.jpeg";
+import imgs6 from "component/img/show vanphong/4B68D7BF-2CA7-4BEC-8F2A-FF9689BDB4B7-min.jpg";
+import imgs7 from "component/img/show vanphong/4C7BB0AF-E1B1-42AC-BEB4-332C35E100B8-min.jpg";
+import imgs8 from "component/img/show vanphong/501CD942-9DA9-4AEC-B83B-4BFF1E5F7F54-min.jpeg";
+import imgs9 from "component/img/show vanphong/CE3579C7-21FF-42E4-902F-D362776BB01E-min.jpg";
+import imgs11 from "component/img/show vanphong/CF0D1885-B068-4851-BAD7-AEDEEE016E2B-min.jpg";
+import imgs12 from "component/img/show vanphong/EBCBCD4D-ADDC-49F8-A97A-65A4228712C3-min.jpg";
+import imgs13 from "component/img/show vanphong/IMG_1938-min.jpg";
+import imgs14 from "component/img/show vanphong/IMG_4783-min.jpg";
+import imgs15 from "component/img/show vanphong/IMG_7458-min.jpg";
+import imgs16 from "component/img/show vanphong/IMG_7769-min.jpg";
+import imgs17 from "component/img/show vanphong/IMG_9344-min.jpg";
+import imgs18 from "component/img/show vanphong/IMG_9347-min.jpg";
+
+export default class ShowVanPhong extends Component {
   render() {
     const settings = {
       dots: false,
@@ -49,7 +48,7 @@ export default class ShowNh extends Component {
     };
     return (
       <>
-        <h2> Tranh vẽ quán bi a</h2>
+        <h2>Tranh vẽ tường văn phòng </h2>
         <Homeslider>
           <Slider {...settings}>
             <div>
@@ -83,9 +82,6 @@ export default class ShowNh extends Component {
               <img className="imgCafe" src={imgs9} alt="" />
             </div>
             <div>
-              <img className="imgCafe" src={imgs10} alt="" />
-            </div>
-            <div>
               <img className="imgCafe" src={imgs11} alt="" />
             </div>
             <div>
@@ -108,9 +104,6 @@ export default class ShowNh extends Component {
             </div>
             <div>
               <img className="imgCafe" src={imgs18} alt="" />
-            </div>
-            <div>
-              <img className="imgCafe" src={imgs19} alt="" />
             </div>
           </Slider>
         </Homeslider>

@@ -15,7 +15,6 @@ const Qustionone = () => {
 
 export default Qustionone;
 const QuestionOne = styled.div`
-  padding-top: 20%;
   & .question-p {
     background-color: #fff;
     padding: 0 10px;

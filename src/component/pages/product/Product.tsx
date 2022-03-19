@@ -74,21 +74,6 @@ const ProductImg = styled.div`
   padding-top: 5%;
   width: 80%;
   margin: auto;
-  @media (max-width: 1100px) {
-    padding-top: 8%;
-  }
-  @media (max-width: 700px) {
-    padding-top: 10%;
-  }
-  @media (max-width: 500px) {
-    padding-top: 15%;
-  }
-  @media (max-width: 363px) {
-    padding-top: 20%;
-  }
-  @media (max-width: 242px) {
-    padding-top: 30%;
-  }
   & .imgProduct {
     width: 50%;
     border-radius: 4px;
