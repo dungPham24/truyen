@@ -1,26 +1,29 @@
 import { Component } from "react";
 import Slider from "react-slick";
 import styled from "styled-components";
-import imgs from "component/img/showanh/IMG_9526-min.jpg";
-import imgs1 from "component/img/showanh/IMG_9527-min.jpg";
-import imgs2 from "component/img/showanh/IMG_9528-min.jpg";
-import imgs3 from "component/img/showanh/IMG_9529-min.jpg";
-import imgs4 from "component/img/showanh/IMG_9530-min.jpg";
-import imgs5 from "component/img/showanh/IMG_9531-min.jpg";
-import imgs6 from "component/img/showanh/IMG_9532-min.jpg";
-import imgs7 from "component/img/showanh/IMG_9533-min.jpg";
-import imgs8 from "component/img/showanh/IMG_9534-min.jpg";
-import imgs9 from "component/img/showanh/IMG_9535-min.jpg";
-import imgs11 from "component/img/showanh/IMG_9537-min.jpg";
-import imgs12 from "component/img/showanh/IMG_9538-min.jpg";
-import imgs13 from "component/img/showanh/IMG_9539-min.jpg";
-import imgs14 from "component/img/showanh/IMG_9540-min.jpg";
-import imgs15 from "component/img/showanh/IMG_9552-min.jpg";
-import imgs16 from "component/img/showanh/IMG_9553-min.jpg";
-import imgs17 from "component/img/showanh/IMG_9554-min.jpg";
-import imgs18 from "component/img/showanh/IMG_9571-min.jpg";
+import imgs from "component/img/show cafe/1BAEFE91-9123-40C0-A0E6-5F7A31C74ABF.jpg";
+import imgs1 from "component/img/show cafe/3DF2A309-C20B-4BC0-9BEE-1C7B8F81D56E.jpeg";
+import imgs2 from "component/img/show cafe/511B92FB-C5DE-4D3B-AE92-40BE31CE789B.jpg";
+import imgs3 from "component/img/show cafe/7215B6F3-B74B-4C77-9BB0-EBADE10A7384.jpeg";
+import imgs4 from "component/img/show cafe/F022EA66-BDEA-4662-AB5D-B89FE4D8972C.jpeg";
+import imgs5 from "component/img/show cafe/IMG_0056.jpg";
+import imgs6 from "component/img/show cafe/IMG_0057.jpg";
+import imgs7 from "component/img/show cafe/IMG_0059.jpg";
+import imgs8 from "component/img/show cafe/IMG_1261.jpg";
+import imgs9 from "component/img/show cafe/IMG_2497.jpg";
+import imgs11 from "component/img/show cafe/IMG_2499.jpg";
+import imgs12 from "component/img/show cafe/IMG_2583.jpg";
+import imgs13 from "component/img/show cafe/IMG_2882.jpg";
+import imgs14 from "component/img/show cafe/IMG_3007.jpg";
+import imgs15 from "component/img/show cafe/IMG_3008.jpg";
+import imgs16 from "component/img/show cafe/IMG_7506.jpg";
+import imgs17 from "component/img/show cafe/IMG_8903.jpg";
+import imgs18 from "component/img/show cafe/IMG_8904.jpg";
+import imgs19 from "component/img/show cafe/IMG_8909.jpg";
+import imgs20 from "component/img/show cafe/IMG_9345.jpg";
+import imgs21 from "component/img/show cafe/IMG_9346.jpg";
 
-export default class ShowManon extends Component {
+export default class ShowCafes extends Component {
   render() {
     const settings = {
       dots: false,
@@ -48,7 +51,7 @@ export default class ShowManon extends Component {
     };
     return (
       <>
-        <h2>Tranh tường mầm non</h2>
+        <h2>Tranh vẽ tường quán Cafe</h2>
         <Homeslider>
           <Slider {...settings}>
             <div>
@@ -104,6 +107,15 @@ export default class ShowManon extends Component {
             </div>
             <div>
               <img className="imgCafe" src={imgs18} alt="" />
+            </div>
+            <div>
+              <img className="imgCafe" src={imgs19} alt="" />
+            </div>
+            <div>
+              <img className="imgCafe" src={imgs20} alt="" />
+            </div>
+            <div>
+              <img className="imgCafe" src={imgs21} alt="" />
             </div>
           </Slider>
         </Homeslider>

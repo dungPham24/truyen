@@ -72,6 +72,7 @@ const SliderHome = styled.div`
   & .sliderHome {
     height: 400px !important;
     border-radius: 20px;
+    width: 100%;
   }
   & .carousel-status {
     display: none !important ;
