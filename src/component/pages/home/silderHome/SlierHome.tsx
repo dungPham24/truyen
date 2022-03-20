@@ -17,7 +17,6 @@ const SlierHome = () => {
         emulateTouch={true}
         infiniteLoop={true}
         interval={4000}
-        showIndicators={false}
         showThumbs={false}
         useKeyboardArrows={true}
         stopOnHover={false}
@@ -59,7 +58,7 @@ export default SlierHome;
 
 const SliderHome = styled.div`
   & .legend {
-    background-color: #ed1c2a !important;
+    background-color: rgb(43, 168, 190) !important;
     width: 50% !important;
     margin-right: 20px;
     left: 70% !important;

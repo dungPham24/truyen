@@ -1,15 +1,14 @@
 import PaginatedItems from "component/panigate/panigate";
 import React from "react";
 import styled from "styled-components";
-
+import { DataImgPanigate } from "component/panigate/DataImgPanigate";
 const ProductHome = () => {
   return (
     <ProductHomes>
       <div className="ProductHome">
         <h2 className="productH2">sản phẩm nổi bật</h2>
       </div>
-      <div></div>
-      <PaginatedItems itemsPerPage={9} />
+      <PaginatedItems itemsPerPage={10} items={DataImgPanigate} />
     </ProductHomes>
   );
 };
@@ -27,6 +26,6 @@ const ProductHomes = styled.div`
     text-align: start;
   }
   & .productH2 {
-    /* font-size: 18px; */
+    color: #fff;
   }
 `;

@@ -177,7 +177,7 @@ const LineUi = styled.div`
   bottom: 0;
   height: 4px;
   border-radius: 15px;
-  background: #54301b;
+  background: #2ba8be;
   transition: all 0.2s ease;
   @media (max-width: 800px) {
     display: none;

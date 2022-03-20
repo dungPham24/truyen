@@ -12,7 +12,7 @@ const Footer = () => {
   return (
     <Fragment>
       <AffterFooter>
-        <p>Phạm Xuân Ngọc</p>
+        <p className="footer--p">Phạm Xuân Ngọc</p>
         <p>
           Chuyên cung cấp sản phẩm Tranh treo tường : Vẽ tranh tường | Điện
           thoại
@@ -106,6 +106,7 @@ const AffterFooter = styled.div`
   text-align: center;
   position: relative;
   margin-top: 10px;
+  padding-top: 50px;
   ::before {
     content: "Niềm vui của chúng tôi là làm các bạn hạnh phúc ";
     position: absolute;
@@ -115,5 +116,8 @@ const AffterFooter = styled.div`
     margin-top: -20px;
     left: 10%;
     background-color: #ccc;
+  }
+  & .footer--p {
+    padding: 10px 0;
   }
 `;

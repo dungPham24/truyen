@@ -9,7 +9,7 @@ const Product = () => {
       <ProductImg>
         <img className="imgProduct" src={imgproduct} alt="" />
         <img src={imgProduct1} className="imgProduct" alt="" />
-        <h2>Giới thiệu Tranh tường Hà nội</h2>
+        <h2 className="ProductH2">Giới thiệu Tranh tường Hà nội</h2>
         <p>
           Tranh tường Hà Nội là nơi hội tụ những tinh hoa nghệ thuật thuần túy
           vốn dĩ đa sắc màu, cội nguồn của dòng chảy mỹ thuật từ ngàn xưa. Lấy
@@ -21,7 +21,7 @@ const Product = () => {
           non…Các dịch vụ: nhà hàng, quán bar, karaoke, quán coffee...cũng được
           trang trí một cách khang trang hơn theo nhiều phong cách khác nhau.
         </p>
-        <h2>Màu Sắc Và Tạo Hình Ấn Tượng </h2>
+        <h2 className="ProductH2">Màu Sắc Và Tạo Hình Ấn Tượng </h2>
         <p>
           Màu sắc và tạo hình là yếu tố quyết định trong một tác phẩm nghệ
           thuật. Rất nhiều Họa Sĩ hay Nghệ Nhân có thể tạo ra một sản phẩm nghệ
@@ -36,7 +36,7 @@ const Product = () => {
           thể hiện một cách sinh động hơn, dễ hiểu, gần gũi và riêng biệt theo
           phong cách của quý khách hàng{" "}
         </p>
-        <h2>Phong Cách Sáng Tạo Đầy Cảm Hứng </h2>
+        <h2 className="ProductH2">Phong Cách Sáng Tạo Đầy Cảm Hứng </h2>
         <p>
           Nhìn phong cách làm việc của Tranh tường Hà nội rất đặc biệt. Bút pháp
           phóng khoáng, tinh thần sáng tạo cao. Làm việc một cách khoa học và
@@ -44,7 +44,7 @@ const Product = () => {
           nhiều chất liệu khác nhau, nội dung truyền đạt cô đọng sáng tạo và dễ
           hiểu, dễ đi vào thế giới nội tâm của người thưởng thức.
         </p>
-        <h2>Luôn Lắng Nghe Ý Kiến Của Khách Hàng </h2>
+        <h2 className="ProductH2">Luôn Lắng Nghe Ý Kiến Của Khách Hàng </h2>
         <p>
           Hiểu được tâm lý của khách hàng và nắm bắt được nhu cầu của thị
           trường, nhóm Họa sĩ Tranh tường Hà nội đã ra đời nhằm mang đến cho quý
@@ -77,5 +77,8 @@ const ProductImg = styled.div`
   & .imgProduct {
     width: 50%;
     border-radius: 4px;
+  }
+  & .ProductH2 {
+    color: #fff;
   }
 `;

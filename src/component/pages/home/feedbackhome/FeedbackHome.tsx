@@ -13,23 +13,23 @@ const FeedbackHome = () => {
 
       <div>
         <div className="girdFeedback">
-          <div>
+          <div className="line--Affter">
             <img src={ImgFeedback} alt="" />
             <p>1 : Thi công nhanh , đảm bảo tiến độ</p>
           </div>
-          <div>
+          <div className="line--Affter">
             <img src={ImgFeedback1} alt="" />
             <p>2 : Đội ngũ hoạ sĩ tay nghề cao</p>
           </div>
-          <div>
+          <div className="line--Affter">
             <img src={ImgFeedback2} alt="" />
             <p>3 : Giá cả cạnh tranh nhất thị trường</p>
           </div>
-          <div>
+          <div className="line--Affter">
             <img src={ImgFeedback3} alt="" />
             <p>4 : Tư vấn thiết kế mẫu miễn phí</p>
           </div>
-          <div>
+          <div className="bottom--Line">
             <img src={ImgFeedback4} alt="" />
             <p>5 : Chế độ bảo hành lâu dài</p>
           </div>
@@ -42,30 +42,24 @@ const FeedbackHome = () => {
 export default FeedbackHome;
 
 const FeedbackHomes = styled.div`
-  background-image: url(${FeedbackImg});
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
   text-align: center;
-  color: #000;
-  padding-top: 100px;
-  & .girdFeedback {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    gap: 20px;
-    text-align: center;
-    padding: 20px 50px 200px 20px;
-    @media (max-width: 800px) {
-      display: block;
-    }
-    @media (max-width: 600px) {
-      font-size: 13px;
-    }
-  }
   & .feedbackh2 {
     color: #fff;
     padding-top: 100px;
-    @media (max-width: 600px) {
-      font-size: 13px;
+  }
+  & .line--Affter {
+    position: relative;
+    padding: 20px 0;
+    ::after {
+      content: "";
+      position: absolute;
+      width: 25%;
+      height: 2px;
+      background-color: #ccc;
+      left: 38%;
     }
+  }
+  & .bottom--Line {
+    margin-bottom: 50px;
   }
 `;

@@ -1,24 +1,30 @@
 import { Component } from "react";
+import { Link } from "react-router-dom";
 import Slider from "react-slick";
 import styled from "styled-components";
-import imgs from "component/img/showanh/IMG_9526-min.jpg";
-import imgs1 from "component/img/showanh/IMG_9527-min.jpg";
-import imgs2 from "component/img/showanh/IMG_9528-min.jpg";
-import imgs3 from "component/img/showanh/IMG_9529-min.jpg";
-import imgs4 from "component/img/showanh/IMG_9530-min.jpg";
-import imgs5 from "component/img/showanh/IMG_9531-min.jpg";
-import imgs6 from "component/img/showanh/IMG_9532-min.jpg";
-import imgs7 from "component/img/showanh/IMG_9533-min.jpg";
-import imgs8 from "component/img/showanh/IMG_9534-min.jpg";
-import imgs9 from "component/img/showanh/IMG_9535-min.jpg";
-import imgs11 from "component/img/showanh/IMG_9537-min.jpg";
-import imgs12 from "component/img/showanh/IMG_9538-min.jpg";
-import imgs13 from "component/img/showanh/IMG_9539-min.jpg";
-import imgs14 from "component/img/showanh/IMG_9540-min.jpg";
-import imgs15 from "component/img/showanh/IMG_9552-min.jpg";
-import imgs16 from "component/img/showanh/IMG_9553-min.jpg";
-import imgs17 from "component/img/showanh/IMG_9554-min.jpg";
-import imgs18 from "component/img/showanh/IMG_9571-min.jpg";
+
+function importAll(r: any) {
+  let images: any[] = [];
+  r.keys().map((item: any, index: number) => {
+    images[index] = r(item);
+    return images;
+  });
+  return images.reduce(
+    (arr, item, idx) => [...arr, { id: idx, img: item }],
+    []
+  );
+}
+
+const DataManon = importAll(
+  require.context("component/img/showanh", true, /\.(png|jpe?g|svg)$/)
+);
+
+/*
+  require.context(<path>, true (ko cần qtam cái này đâu cứ true là được :v), 
+  /\.(png|jpe?g|svg)$/ ( regex name file, ở đây nó sẽ lấy file có đuôi .png, .jpe, jpeg, svg ))
+  */
+
+export { DataManon };
 
 export default class ShowManon extends Component {
   render() {
@@ -40,83 +46,57 @@ export default class ShowManon extends Component {
         {
           breakpoint: 480,
           settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1,
+            slidesToShow: 2,
+            slidesToScroll: 2,
           },
         },
       ],
     };
     return (
-      <>
-        <h2>Tranh tường mầm non</h2>
-        <Homeslider>
+      <LinkCafe>
+      <Link to="/detailShowMamnon" className="Linkdecafe">
+        <h2 className="showmargin">Tranh tường mầm non</h2>
+        <TestHomslider>
           <Slider {...settings}>
-            <div>
-              <img className="imgCafe" src={imgs} alt="" />
-            </div>
-            <div>
-              <img className="imgCafe" src={imgs1} alt="" />
-            </div>
-            <div>
-              <img className="imgCafe" src={imgs2} alt="" />
-            </div>
-            <div>
-              <img className="imgCafe" src={imgs3} alt="" />
-            </div>
-            <div>
-              <img className="imgCafe" src={imgs4} alt="" />
-            </div>
-            <div>
-              <img className="imgCafe" src={imgs5} alt="" />
-            </div>
-            <div>
-              <img className="imgCafe" src={imgs6} alt="" />
-            </div>
-            <div>
-              <img className="imgCafe" src={imgs7} alt="" />
-            </div>
-            <div>
-              <img className="imgCafe" src={imgs8} alt="" />
-            </div>
-            <div>
-              <img className="imgCafe" src={imgs9} alt="" />
-            </div>
-            <div>
-              <img className="imgCafe" src={imgs11} alt="" />
-            </div>
-            <div>
-              <img className="imgCafe" src={imgs12} alt="" />
-            </div>
-            <div>
-              <img className="imgCafe" src={imgs13} alt="" />
-            </div>
-            <div>
-              <img className="imgCafe" src={imgs14} alt="" />
-            </div>
-            <div>
-              <img className="imgCafe" src={imgs15} alt="" />
-            </div>
-            <div>
-              <img className="imgCafe" src={imgs16} alt="" />
-            </div>
-            <div>
-              <img className="imgCafe" src={imgs17} alt="" />
-            </div>
-            <div>
-              <img className="imgCafe" src={imgs18} alt="" />
-            </div>
+            {DataManon.map((item: any) => {
+              return (
+                <Homeslider key={item.id}>
+                  <div className="test">
+                    <img className="imgCafe" src={item.img} alt="" />
+                  </div>
+                </Homeslider>
+              );
+            })}
           </Slider>
-        </Homeslider>
-      </>
+        </TestHomslider>
+      </Link>
+      
+      </LinkCafe>
     );
   }
 }
 
 const Homeslider = styled.div`
+  & .imgCafe {
+    width: 100%;
+    height: 200px;
+  }
+  & .test {
+    width: 95%;
+    margin: auto;
+  }
+`;
+const TestHomslider = styled.div`
   width: 90%;
   margin: auto;
-  & .imgCafe {
-    width: 95%;
-    height: 200px;
+`;
+
+const LinkCafe = styled.div`
+  & .Linkdecafe {
+    text-decoration: none;
+    color: #fff;
+  }
+  & .showmargin {
+    margin-left: 20px;
   }
 `;

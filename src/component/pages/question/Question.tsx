@@ -18,7 +18,7 @@ export default memo(Question);
 
 const Questions = styled.div`
   padding-top: 5%;
-  width: 50%;
+  width: 90%;
   margin: auto;
   padding-bottom: 5%;
 `;

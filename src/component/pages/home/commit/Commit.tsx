@@ -41,6 +41,6 @@ const Commits = styled.div`
     display: block;
   }
   & .commith2 {
-    color: #ed1c2a;
+    color: #fff;
   }
 `;
