@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import FeedbackImg from "../../../img/bg-image-red.png";
 import ImgFeedback from "../../../img/reason1.png";
 import ImgFeedback1 from "../../../img/reason2.png";
 import ImgFeedback2 from "../../../img/reason3.png";
