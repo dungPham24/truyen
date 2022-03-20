@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 import { DataNhahang } from "../showNhahang/ShowNhahang";
@@ -26,7 +26,7 @@ const DetaiShow = () => {
   );
 };
 
-export default DetaiShow;
+export default memo(DetaiShow);
 const GirdDetail = styled.div`
   padding-top: 20px;
   display: grid;

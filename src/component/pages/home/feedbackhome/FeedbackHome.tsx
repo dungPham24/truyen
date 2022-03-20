@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 import styled from "styled-components";
 import ImgFeedback from "../../../img/reason1.png";
 import ImgFeedback1 from "../../../img/reason2.png";
@@ -38,7 +38,7 @@ const FeedbackHome = () => {
   );
 };
 
-export default FeedbackHome;
+export default memo(FeedbackHome);
 
 const FeedbackHomes = styled.div`
   text-align: center;

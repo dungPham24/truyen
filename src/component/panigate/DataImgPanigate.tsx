@@ -1,3 +1,5 @@
+import { memo } from "react";
+
 function importAll(r: any) {
   let images: any[] = [];
   r.keys().map((item: any, index: number) => {

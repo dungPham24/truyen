@@ -1,4 +1,4 @@
-import { Component } from "react";
+import { Component, memo } from "react";
 import Slider from "react-slick";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
@@ -75,21 +75,21 @@ export default class ShowCafes extends Component {
   }
 }
 
-const Homeslider = styled.div`
+const Homeslider = memo(styled.div`
   width: 90%;
   margin: auto;
   & .imgCafe {
     width: 95%;
     height: 200px;
   }
-`;
+`);
 
-const TestHomslider = styled.div`
+const TestHomslider = memo(styled.div`
   width: 90%;
   margin: auto;
-`;
+`);
 
-const LinkCafe = styled.div`
+const LinkCafe = memo(styled.div`
   & .Linkdecafe {
     text-decoration: none;
     color: #fff;
@@ -97,4 +97,4 @@ const LinkCafe = styled.div`
   & .showmargin {
     margin-left: 20px;
   }
-`;
+`);

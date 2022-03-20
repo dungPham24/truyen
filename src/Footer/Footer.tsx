@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React, { Fragment, memo } from "react";
 import styled from "styled-components";
 import Footer1 from "../../src/component/img/footer.jpg";
 import Footer2 from "../../src/component/img/footer1.jpg";
@@ -66,7 +66,7 @@ const Footer = () => {
   );
 };
 
-export default Footer;
+export default memo(Footer);
 
 const Footers = styled.div`
   display: grid;

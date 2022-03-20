@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { memo, useEffect, useState } from "react";
 import styled from "styled-components";
 import logoHeader from "../component/img/imgheader.jpg";
 import { Link } from "react-router-dom";
@@ -111,7 +111,7 @@ const HeaderUi = () => {
   );
 };
 
-export default HeaderUi;
+export default memo(HeaderUi);
 const HeaderUis = styled.div`
   position: sticky;
   z-index: 12000000000000;

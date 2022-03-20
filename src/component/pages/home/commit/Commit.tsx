@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 import styled from "styled-components";
 import Commit1 from "../../../img/bottomSlider.png";
 import Commit2 from "../../../img/bottomslider2.png";
@@ -27,7 +27,7 @@ const Commit = () => {
   );
 };
 
-export default Commit;
+export default memo(Commit);
 
 const Commits = styled.div`
   width: 80%;

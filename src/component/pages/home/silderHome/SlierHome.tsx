@@ -7,6 +7,7 @@ import slider3 from "component/img/slider1 (2).jpg";
 import slider4 from "component/img/slider1 (3).jpg";
 import slider5 from "component/img/slider1 (4).jpg";
 import styled from "styled-components";
+import { memo } from "react";
 const SlierHome = () => {
   return (
     <SliderHome>
@@ -54,7 +55,7 @@ const SlierHome = () => {
   );
 };
 
-export default SlierHome;
+export default memo(SlierHome);
 
 const SliderHome = styled.div`
   & .legend {

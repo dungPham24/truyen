@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { memo, useState } from "react";
 import styled from "styled-components";
 
 const Qustionone = () => {
@@ -45,7 +45,7 @@ const Qustionone = () => {
   );
 };
 
-export default Qustionone;
+export default memo(Qustionone);
 const QuestionOne = styled.div`
   & .question-p {
     background-color: #fff;

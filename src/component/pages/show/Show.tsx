@@ -1,4 +1,5 @@
 import Footer from "Footer/Footer";
+import { memo } from "react";
 import styled from "styled-components";
 import ShowCafes from "./showCafenhahang/ShowCafe";
 import ShowManon from "./ShowManon/ShowManon";
@@ -21,7 +22,7 @@ const Show = () => {
   );
 };
 
-export default Show;
+export default memo(Show);
 
 const ShowS = styled.div`
   padding-top: 5%;

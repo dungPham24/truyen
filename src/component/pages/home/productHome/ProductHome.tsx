@@ -1,5 +1,5 @@
 import PaginatedItems from "component/panigate/panigate";
-import React from "react";
+import React, { memo } from "react";
 import styled from "styled-components";
 import { DataImgPanigate } from "component/panigate/DataImgPanigate";
 const ProductHome = () => {
@@ -13,7 +13,7 @@ const ProductHome = () => {
   );
 };
 
-export default ProductHome;
+export default memo(ProductHome);
 
 const ProductHomes = styled.div`
   max-width: 90%;

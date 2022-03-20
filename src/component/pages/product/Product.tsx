@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 import imgproduct from "component/img/productimg2.jpg";
 import styled from "styled-components";
 import imgProduct1 from "component/img/imgproduct.jpg";
@@ -68,7 +68,7 @@ const Product = () => {
   );
 };
 
-export default Product;
+export default memo(Product);
 
 const ProductImg = styled.div`
   padding-top: 5%;
