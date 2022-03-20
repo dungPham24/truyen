@@ -60,11 +60,12 @@ export default memo(SlierHome);
 const SliderHome = styled.div`
   & .legend {
     background-color: rgb(43, 168, 190) !important;
-    width: 50% !important;
-    margin-right: 20px;
-    left: 70% !important;
+    width: 100% !important;
+    margin: auto;
+    left: 40% !important;
     opacity: 1 !important;
     font-size: 22px !important;
+    margin-left: -40% !important;
     @media (max-width: 800px) {
       font-size: 10px !important;
     }
